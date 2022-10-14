@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package api.iaas.opennebula;
+
+option go_package = "devops/api/iaas/opennebula;opennebula";
+option java_multiple_files = true;
+option java_package = "api.iaas.opennebula";
+
+service Instance {
+	rpc CreateInstance (CreateInstanceRequest) returns (CreateInstanceReply);
+	rpc UpdateInstance (UpdateInstanceRequest) returns (UpdateInstanceReply);
+	rpc DeleteInstance (DeleteInstanceRequest) returns (DeleteInstanceReply);
+	rpc GetInstance (GetInstanceRequest) returns (GetInstanceReply);
+	rpc ListInstance (ListInstanceRequest) returns (ListInstanceReply);
+}
+
+message CreateInstanceRequest {}
+message CreateInstanceReply {}
+
+message UpdateInstanceRequest {}
+message UpdateInstanceReply {}
+
+message DeleteInstanceRequest {}
+message DeleteInstanceReply {}
+
+message GetInstanceRequest {}
+message GetInstanceReply {}
+
+message ListInstanceRequest {}
+message ListInstanceReply {}

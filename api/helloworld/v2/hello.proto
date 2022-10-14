@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package api.helloworld.v2;
+
+option go_package = "devops/api/helloworld/v2;v2";
+option java_multiple_files = true;
+option java_package = "api.helloworld.v2";
+
+service Hello {
+	rpc CreateHello (CreateHelloRequest) returns (CreateHelloReply);
+	rpc UpdateHello (UpdateHelloRequest) returns (UpdateHelloReply);
+	rpc DeleteHello (DeleteHelloRequest) returns (DeleteHelloReply);
+	rpc GetHello (GetHelloRequest) returns (GetHelloReply);
+	rpc ListHello (ListHelloRequest) returns (ListHelloReply);
+}
+
+message CreateHelloRequest {}
+message CreateHelloReply {}
+
+message UpdateHelloRequest {}
+message UpdateHelloReply {}
+
+message DeleteHelloRequest {}
+message DeleteHelloReply {}
+
+message GetHelloRequest {}
+message GetHelloReply {}
+
+message ListHelloRequest {}
+message ListHelloReply {}
