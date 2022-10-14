@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package api.iaas.opennebula;
+
+option go_package = "devops/api/iaas/opennebula;opennebula";
+option java_multiple_files = true;
+option java_package = "api.iaas.opennebula";
+
+service Image {
+	rpc CreateImage (CreateImageRequest) returns (CreateImageReply);
+	rpc UpdateImage (UpdateImageRequest) returns (UpdateImageReply);
+	rpc DeleteImage (DeleteImageRequest) returns (DeleteImageReply);
+	rpc GetImage (GetImageRequest) returns (GetImageReply);
+	rpc ListImage (ListImageRequest) returns (ListImageReply);
+}
+
+message CreateImageRequest {}
+message CreateImageReply {}
+
+message UpdateImageRequest {}
+message UpdateImageReply {}
+
+message DeleteImageRequest {}
+message DeleteImageReply {}
+
+message GetImageRequest {}
+message GetImageReply {}
+
+message ListImageRequest {}
+message ListImageReply {}

@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package api.iaas.opennebula;
+
+option go_package = "devops/api/iaas/opennebula;opennebula";
+option java_multiple_files = true;
+option java_package = "api.iaas.opennebula";
+
+service Storage {
+	rpc CreateStorage (CreateStorageRequest) returns (CreateStorageReply);
+	rpc UpdateStorage (UpdateStorageRequest) returns (UpdateStorageReply);
+	rpc DeleteStorage (DeleteStorageRequest) returns (DeleteStorageReply);
+	rpc GetStorage (GetStorageRequest) returns (GetStorageReply);
+	rpc ListStorage (ListStorageRequest) returns (ListStorageReply);
+}
+
+message CreateStorageRequest {}
+message CreateStorageReply {}
+
+message UpdateStorageRequest {}
+message UpdateStorageReply {}
+
+message DeleteStorageRequest {}
+message DeleteStorageReply {}
+
+message GetStorageRequest {}
+message GetStorageReply {}
+
+message ListStorageRequest {}
+message ListStorageReply {}
